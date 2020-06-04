@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8">
+  <title>Nytimes</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <header><h1>Newyork Times</h1></header>
+
+  <div class="wrapper">
+
+    <div class="controls">
+      <form>
+        <p>
+          <label for="search">Search here: </label>
+          <input type="text" id="search" class="search" required autocomplete="off">
+        </p>
+        <p>
+          <label for="start-date">start date (format YYYYMMDD): </label>
+          <input type="date" id="start-date" class="start-date" pattern="[0-9]{8}">
+        </p>
+        <p>
+          <label for="end-date">end date (format YYYYMMDD): </label>
+          <input type="date" id="end-date" class="end-date" pattern="[0-9]{8}">
+        </p>
+        <p>
+          <button class="submit">Search</button>
+        </p>
+      </form>
+    </div>
+
+    <div class="results">
+      <nav>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+      </nav>
+
+      <section>
+      </section>
+    </div>
+
+    </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
